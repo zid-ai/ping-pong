@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+  h2{
+    color: blue;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid blue;
+    border-block-color: white;
+    border-radius: 50px;
+  }
+  
+  .game-board {
+    width: 800px;
+    height: 400px;
+    background: linear-gradient(to bottom, blue, #9fadfa, hsl(0, 0%, 99%));
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(233, 27, 233);
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .paddle {
+    width: 10px;
+    height: 80px;
+    background: linear-gradient(120deg, rgb(112, 212, 112), rgb(103, 103, 211));
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+  }
+  
+  .paddle.right {
+    left: auto;
+    right: 20px;
+  }
+  
+  .score-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .score {
+    margin: 0 10px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
